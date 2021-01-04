@@ -29,7 +29,6 @@ library
     Checkers.FrontEnd.Terminal.Draw
     Checkers.FrontEnd.Terminal.Event
     Checkers.FrontEnd.Terminal.Types
-    Checkers.FrontEnd.Types
   hs-source-dirs: src
 -- executable CheckersRedux
 --   main-is:             Main.hs
