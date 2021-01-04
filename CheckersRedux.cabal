@@ -21,6 +21,7 @@ library
   exposed-modules: 
     Checkers.Types
     Checkers.BasicPrint 
+    Checkers.FrontEnd.Types
     Checkers.FrontEnd.Basic 
     Checkers.FrontEnd.Terminal
   other-modules: 
