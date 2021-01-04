@@ -2,8 +2,11 @@ module Checkers.Types where
 
 import Data.Maybe
 
+data PorK a = P a | K a  -- pawn or king
+    deriving (Show,Eq, Read)
+
 type Coord = (Int, Int) -- (x,y), 0-indexed
-type Move = [Coord] -- A move is the path determined by your piece.
+type Move = [PorK Coord] -- A move is the path determined by your piece.
 
 data Player = Red | Black -- 2 players, red and black
   deriving (Eq, Show)

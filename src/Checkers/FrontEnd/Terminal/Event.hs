@@ -73,7 +73,10 @@ humanTuiEvent s e =
           where
             moveFun = over (configL . stateL) ((s^.configL.engineL) (s^.moveL))
             resetMove = set moveL []
-        EvKey (KChar ' ') [] -> continue $ over moveL (\l -> l ++ [x]) s
+        EvKey (KChar 'p') [] -> continue $ over moveL (\l -> l ++ [P x]) s
+          where
+            x = accessCursor $ view boardL s        
+        EvKey (KChar 'k') [] -> continue $ over moveL (\l -> l ++ [K x]) s
           where
             x = accessCursor $ view boardL s
         _ -> continue s
