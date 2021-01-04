@@ -1,12 +1,12 @@
-module FrontEnd.Terminal (tui) where
+module Checkers.FrontEnd.Terminal (tui) where
 
-import Types
+import Checkers.Types
 
-import FrontEnd.Types
-import FrontEnd.Terminal.Types
-import FrontEnd.Terminal.Draw
-import FrontEnd.Terminal.Cursor
-import FrontEnd.Terminal.Event
+import Checkers.FrontEnd.Types
+import Checkers.FrontEnd.Terminal.Types
+import Checkers.FrontEnd.Terminal.Draw
+import Checkers.FrontEnd.Terminal.Cursor
+import Checkers.FrontEnd.Terminal.Event
 -- import System.Directory
 -- import Control.Monad.IO.Class
 -- import Data.Maybe

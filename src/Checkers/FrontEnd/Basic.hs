@@ -1,11 +1,11 @@
-module FrontEnd.Basic (frontend, feGameDump, printState) where
+module Checkers.FrontEnd.Basic (frontend, feGameDump, printState) where
 {-
     This module is a simplistic front-end that will run in a terminal.
     If you can't get the Brick or GTK frontend to work, this is fine.
 -}
-import Types
-import BasicPrint
-import FrontEnd.Types
+import Checkers.Types
+import Checkers.BasicPrint
+import Checkers.FrontEnd.Types
 
 
 printConfig :: GameConfig -> [String]

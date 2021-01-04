@@ -1,6 +1,6 @@
-module FrontEnd.Types where
+module Checkers.FrontEnd.Types where
 
-import Types
+import Checkers.Types
 
 data GameConfig = 
   GameConfig { engine :: CheckersEngine

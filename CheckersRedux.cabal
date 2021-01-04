@@ -18,12 +18,15 @@ build-type:          Simple
 extra-source-files:  CHANGELOG.md
 
 library
-  exposed-modules: Types, BasicPrint, FrontEnd.Basic, FrontEnd.Terminal
-  other-modules: FrontEnd.Terminal.Cursor
-               , FrontEnd.Terminal.Draw
-               , FrontEnd.Terminal.Event
-               , FrontEnd.Terminal.Types
-               , FrontEnd.Types
+  exposed-modules: Checkers.Types
+                   Checkers.BasicPrint 
+                   Checkers.FrontEnd.Basic 
+                   Checkers.FrontEnd.Terminal
+  other-modules: Checkers.FrontEnd.Terminal.Cursor
+                 Checkers.FrontEnd.Terminal.Draw
+                 Checkers.FrontEnd.Terminal.Event
+                 Checkers.FrontEnd.Terminal.Types
+                 Checkers.FrontEnd.Types
   hs-source-dirs: src
 -- executable CheckersRedux
 --   main-is:             Main.hs

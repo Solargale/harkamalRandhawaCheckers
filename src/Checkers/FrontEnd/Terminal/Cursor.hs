@@ -1,7 +1,7 @@
-module FrontEnd.Terminal.Cursor where
+module Checkers.FrontEnd.Terminal.Cursor where
 
-import Types
-import FrontEnd.Terminal.Types
+import Checkers.Types
+import Checkers.FrontEnd.Terminal.Types
 import qualified Data.List.NonEmpty as NE
 import Cursor.Simple.List.NonEmpty
 import Data.Maybe

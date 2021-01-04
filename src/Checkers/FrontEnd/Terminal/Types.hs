@@ -1,12 +1,12 @@
-module FrontEnd.Terminal.Types where
+module Checkers.FrontEnd.Terminal.Types where
 
 -- packages
 import Lens.Micro
 import Lens.Micro.Extras
 import Cursor.Simple.List.NonEmpty
 -- local
-import Types
-import FrontEnd.Types
+import Checkers.Types
+import Checkers.FrontEnd.Types
 
 type Board = NonEmptyCursor (NonEmptyCursor Coord)
 

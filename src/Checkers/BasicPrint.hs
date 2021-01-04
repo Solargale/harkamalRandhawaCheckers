@@ -1,6 +1,6 @@
-module BasicPrint where
+module Checkers.BasicPrint where
 
-import Types
+import Checkers.Types
 
 {-
     Basic pretty-printing functionality.

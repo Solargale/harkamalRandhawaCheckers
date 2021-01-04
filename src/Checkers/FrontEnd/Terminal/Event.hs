@@ -1,4 +1,4 @@
-module FrontEnd.Terminal.Event (handleTuiEvent) where
+module Checkers.FrontEnd.Terminal.Event (handleTuiEvent) where
 
 import Brick.Main
 import Brick.Types
@@ -11,10 +11,10 @@ import Cursor.Simple.List.NonEmpty
 import Lens.Micro
 import Lens.Micro.Extras
 
-import FrontEnd.Terminal.Types
-import Types
-import FrontEnd.Types
-import FrontEnd.Terminal.Cursor
+import Checkers.FrontEnd.Terminal.Types
+import Checkers.Types
+import Checkers.FrontEnd.Types
+import Checkers.FrontEnd.Terminal.Cursor
 {-
     In case the player is an AI, you get and display the move.
     In case the player is human, you move to the human loop.

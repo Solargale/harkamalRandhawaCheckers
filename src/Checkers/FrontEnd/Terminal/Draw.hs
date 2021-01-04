@@ -1,4 +1,4 @@
-module FrontEnd.Terminal.Draw where
+module Checkers.FrontEnd.Terminal.Draw where
 
 -- Brick
 import Brick.AttrMap
@@ -28,8 +28,8 @@ import Lens.Micro
 import Lens.Micro.Extras
 
 -- Local pieces
-import Types
-import FrontEnd.Terminal.Types
+import Checkers.Types
+import Checkers.FrontEnd.Terminal.Types
 
 
 

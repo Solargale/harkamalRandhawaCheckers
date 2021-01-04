@@ -1,4 +1,4 @@
-module Types where
+module Checkers.Types where
 
 import Data.Maybe
 
