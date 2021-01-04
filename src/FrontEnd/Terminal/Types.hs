@@ -6,6 +6,7 @@ import Lens.Micro.Extras
 import Cursor.Simple.List.NonEmpty
 -- local
 import Types
+import FrontEnd.Types
 
 type Board = NonEmptyCursor (NonEmptyCursor Coord)
 

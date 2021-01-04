@@ -34,39 +34,6 @@ type GenMove = GameState -> Move
 -- GameConfig is essentially a config file 
 data PlayerType = Ai GenMove | Human
 
-data GameConfig = 
-  GameConfig { engine :: CheckersEngine
-             , blackMove :: PlayerType
-             , redMove :: PlayerType
-             , state :: GameState}
-
--- There will be multiple frontends to this program; from the AI-programmers viewpoint it doesn't matter.
--- In fact, I'd recommend you avoid looking at their source code, as it uses concepts not covered in class.
--- There is simply a frontend type, and it will be 
-type FrontEnd = GameConfig -> IO ()
-
-simpleConfig = GameConfig {
-  engine = undefined,
-  blackMove = Human,
-  redMove = Human,
-  state = initialGameState
-}
-
--- Some convenience functions
-
--- human :: FrontEnd -> ApplyMove -> GameState -> IO ()
--- human fe = fe Human Human
-
--- redAi :: FrontEnd -> AiMove -> ApplyMove -> GameState -> IO ()
--- redAi fe r = fe (AI r) Human
-
--- blackAi :: FrontEnd -> AiMove -> ApplyMove -> GameState -> IO ()
--- blackAi fe b = fe Human (AI b)
-
--- aiTest :: FrontEnd -> AiMove -> AiMove -> ApplyMove -> GameState -> IO ()
--- aiTest fe r b = fe (AI r) (AI b)
-
-
 -- The initial game state
 
 initialGameState :: GameState

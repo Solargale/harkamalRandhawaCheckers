@@ -13,6 +13,7 @@ import Lens.Micro.Extras
 
 import FrontEnd.Terminal.Types
 import Types
+import FrontEnd.Types
 import FrontEnd.Terminal.Cursor
 {-
     In case the player is an AI, you get and display the move.

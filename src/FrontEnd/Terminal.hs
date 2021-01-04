@@ -1,6 +1,8 @@
 module FrontEnd.Terminal (tui) where
 
 import Types
+
+import FrontEnd.Types
 import FrontEnd.Terminal.Types
 import FrontEnd.Terminal.Draw
 import FrontEnd.Terminal.Cursor
