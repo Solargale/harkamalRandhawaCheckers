@@ -2,13 +2,12 @@ module Checkers.Types where
 
 import Data.Maybe
 
-
 type Coord = (Int, Int) -- (x,y), 0-indexed
 type Move = [Coord] -- A move is the path determined by your piece.
 
 data Player = Red | Black -- 2 players, red and black
   deriving (Eq, Show)
-data Status = Turn Player | Winner (Maybe Player)
+data Status = Turn Player | GameOver
   deriving (Eq,Show)
 -- The status determines whether or not the game is still ongoing
 -- Winner Nothing is a tie

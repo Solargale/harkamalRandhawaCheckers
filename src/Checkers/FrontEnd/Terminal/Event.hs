@@ -21,7 +21,7 @@ import Checkers.FrontEnd.Terminal.Cursor
 -}
 handleTuiEvent :: TuiState -> BrickEvent n e -> EventM n (Next TuiState)
 handleTuiEvent s = case view (configL . stateL . statusL) s of
-  Winner _ -> gameOverTuiEvent s
+  GameOver -> gameOverTuiEvent s
   Turn Red -> case view (configL . redMoveL) s of
                 Human -> humanTuiEvent s
                 Ai f -> cpuTuiEvent $ set moveL  (f (s^.configL.stateL)) s

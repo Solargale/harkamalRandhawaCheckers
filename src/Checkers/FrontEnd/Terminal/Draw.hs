@@ -38,7 +38,7 @@ import Checkers.FrontEnd.Terminal.Types
 -}
 drawTui :: TuiState -> [Widget ResourceName]
 drawTui s = case view (configL . stateL . statusL) s of
-  Winner c -> drawGameOverUI $ view (configL . stateL . messageL) s
+  GameOver -> drawGameOverUI $ view (configL . stateL . messageL) s
   _ -> drawGameUI s
 
 drawGameUI :: TuiState -> [Widget ResourceName]
