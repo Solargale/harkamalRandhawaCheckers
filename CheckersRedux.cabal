@@ -3,7 +3,7 @@ cabal-version:       >=1.10
 -- init'.  For further documentation, see
 -- http://haskell.org/cabal/users-guide/
 
-name:                CheckersRedux
+name:                checkers
 version:             0.1.0.0
 -- synopsis:
 -- description:
@@ -18,7 +18,7 @@ build-type:          Simple
 extra-source-files:  CHANGELOG.md
 
 library
-  exposed-modules: Types, FrontEnd.Basic, FrontEnd.Terminal
+  exposed-modules: Types, BasicPrint, FrontEnd.Basic, FrontEnd.Terminal
   hs-source-dirs: src
 -- executable CheckersRedux
 --   main-is:             Main.hs
