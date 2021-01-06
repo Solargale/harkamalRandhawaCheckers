@@ -111,7 +111,8 @@ There will likely be a small tournament to test your AIs, and you will be able t
 To make it easy to compete, I recommend the following layout.
 
 -   Use a source directory, "src". Keep your main function in this module.
--   In the source directory, have *another* subdirectory called "YourName" (so in my case "BenMacadam"). All of your modules should have the prefix YourName.ModuleName (so, for example, the module "src/BenMacAdam/AiPlayers.hs" would be called "BenMacAdam.AiPlayers").
+-   When submitting, please have modules named Ai.hs and ApplyMove.hs, as we will use these in testing scripts.
+-   For the tournament, please add another folder called  "YourName" (so in my case "BenMacadam") to src, and move your files here. All of your modules should have the prefix YourName.ModuleName (so, for example, the module "src/BenMacAdam/AiPlayers.hs" would be called "BenMacAdam.AiPlayers"). This will make the tournament run smoothly!
 
 This will make it *very* easy to both test your code and to run the checkers tourname, but is not necessary!
 
@@ -145,7 +146,8 @@ The basic types used in this checkers game are as follows:
     type Coord = (Int, Int)
     type PieceState = [Coord]
     {-
-        A move is essentially a list of coordinates, tracing our the path travelled by a piece, where you keep track of whether or not the piece is a Pawn or King using the PorK datatype.
+        A move is essentially a list of coordinates, tracing our the path travelled by a piece, 
+        where you keep track of whether or not the piece is a Pawn or King using the PorK datatype.
         The list goes "in the right order", e.g. [firstSquare, secondSquare, ...]
     -}
     data PorK a = P a | K a  
