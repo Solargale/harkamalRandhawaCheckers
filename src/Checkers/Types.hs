@@ -2,14 +2,30 @@ module Checkers.Types where
 
 import Data.Maybe
 
-data PorK a = P a | K a  -- pawn or king
-    deriving (Show,Eq, Read)
+{-
+    A coordinate represents a square on the board, it is a pair of integers (x,y).
+    The board is 0-indexed, where (_,0) is the top row of the board, and (0,_) is the left-most column.
+    The state of the board is given as a list of coordinates.
+-}
+type Coord = (Int, Int)
+type PieceState = [Coord]
+{-
+    A move is essentially a list of coordinates, tracing our the path travelled by a piece, where you keep track of whether or not the piece is a Pawn or King using the PorK datatype.
+    The list goes "in the right order", e.g. [firstSquare, secondSquare, ...]
+-}
+data PorK a = P a | K a  
+  deriving (Show,Eq, Read)
 
-type Coord = (Int, Int) -- (x,y), 0-indexed
-type Move = [PorK Coord] -- A move is the path determined by your piece.
+type Move = [PorK Coord]
 
+{-
+    The player datatype is the red/black colour.
+-}
 data Player = Red | Black -- 2 players, red and black
   deriving (Eq, Show)
+{-
+    It is either red/black's turn, or the game has finished.
+-}
 data Status = Turn Player | GameOver
   deriving (Eq,Show)
 -- The status determines whether or not the game is still ongoing
@@ -17,10 +33,10 @@ data Status = Turn Player | GameOver
 
 -- Gamestate has al of the data for the game.
 data GameState =
-  GameState { blackPieces :: [Coord]
-            , redPieces :: [Coord]
-            , blackKings :: [Coord]
-            , redKings :: [Coord]
+  GameState { blackPieces :: PieceState
+            , redPieces :: PieceState
+            , blackKings :: PieceState
+            , redKings :: PieceState
             , status :: Status
             , message :: String 
             , history :: [Move]}
@@ -33,8 +49,6 @@ type CheckersEngine = Move -> GameState -> GameState
 type GenMove = GameState -> Move
 
 
--- GameConfig is essentially a config file 
-data PlayerType = Ai GenMove | Human
 
 -- The initial game state
 

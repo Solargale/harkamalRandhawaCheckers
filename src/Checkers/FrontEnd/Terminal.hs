@@ -1,4 +1,4 @@
-module Checkers.FrontEnd.Terminal (tui) where
+module Checkers.FrontEnd.Terminal (frontend) where
 
 import Checkers.Types
 
@@ -25,8 +25,8 @@ tuiApp =
         , appAttrMap = const theAttributes}
 
 
-tui :: FrontEnd
-tui state = do
+frontend :: FrontEnd
+frontend state = do
     let initialState = TuiState {board=initialBoard, move=[], king = False, config = state} 
     endState <- defaultMain tuiApp initialState
     print (endState^.configL.stateL)

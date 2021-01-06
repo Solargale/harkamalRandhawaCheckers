@@ -1,4 +1,4 @@
-module Checkers.BasicPrint where
+module Checkers.BasicPrint (printState, printBoard) where
 
 import Checkers.Types
 
