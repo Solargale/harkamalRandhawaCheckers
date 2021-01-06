@@ -27,6 +27,6 @@ tuiApp =
 
 tui :: FrontEnd
 tui state = do
-    let initialState = TuiState {board=initialBoard, move=[], config = state} 
+    let initialState = TuiState {board=initialBoard, move=[], king = False, config = state} 
     endState <- defaultMain tuiApp initialState
     print (endState^.configL.stateL)

@@ -73,11 +73,22 @@ humanTuiEvent s e =
           where
             moveFun = over (configL . stateL) ((s^.configL.engineL) (s^.moveL))
             resetMove = set moveL []
-        EvKey (KChar 'p') [] -> continue $ over moveL (\l -> l ++ [P x]) s
+        EvKey (KChar ' ') [] -> continue $ over moveL addPiece $ over kingL kingCheck s
           where
-            x = accessCursor $ view boardL s        
-        EvKey (KChar 'k') [] -> continue $ over moveL (\l -> l ++ [K x]) s
-          where
+            x :: Coord
             x = accessCursor $ view boardL s
+            addPiece :: Move -> Move
+            addPiece l = l ++ [if s^.kingL then K x else P x]
+            kingCheck :: Bool -> Bool
+            kingCheck t = case (s^.moveL, s^.configL.stateL.statusL, x) of
+              -- started by choosing a king
+              ([], Turn Black, _)    -> x `elem` s^.configL.stateL.blackKingsL
+              ([], Turn Red, _)      -> x `elem` s^.configL.stateL.redKingsL
+              -- landed on the edge of the board, becoming a king
+              (_, Turn Red, (_, 0))  -> True 
+              (_, Turn Black, (_,7)) -> True 
+              -- neither trigger happens, keep state same.
+              _                      -> t
         _ -> continue s
     _ -> continue s
+

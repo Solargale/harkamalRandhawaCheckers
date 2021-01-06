@@ -12,6 +12,7 @@ type Board = NonEmptyCursor (NonEmptyCursor Coord)
 
 data TuiState = TuiState { board :: Board -- handles the state of the cursor
                          , move :: Move -- handles the state of the move being built
+                         , king :: Bool
                          , config :: GameConfig}
 
 type ResourceName = String
@@ -70,3 +71,6 @@ moveL = lens move (\tuistate newPoint -> tuistate { move = newPoint })
 
 configL :: Lens' TuiState GameConfig
 configL = lens config (\tuistate newPoint -> tuistate { config = newPoint } )
+
+kingL :: Lens' TuiState Bool
+kingL = lens king (\tuistate newPoint -> tuistate { king = newPoint } )
