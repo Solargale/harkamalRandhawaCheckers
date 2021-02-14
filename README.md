@@ -18,7 +18,7 @@ source-repository-package
 
 source-repository-package
     type: git
-    location: https://github.com/benjamin-macadam/checkers-brick.git
+    location: https://github.com/SgtWiggles/checkers-brick.git
 ```
 
 DIR-NAME.cabal
@@ -48,7 +48,7 @@ executable DIR-NAME
   hs-source-dirs: src
   other-modules:      YOUR-MODULES
   -- other-extensions:
-  build-depends:        base >=4.13 && <4.14
+  build-depends:        base >=4.13
                       , checkers
                       , checkers-brick
   -- hs-source-dirs:
