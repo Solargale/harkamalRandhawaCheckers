@@ -14,7 +14,7 @@ packages: .
 
 source-repository-package
     type: git
-    location: https://github.com/benjamin-macadam/CheckersRedux.git
+    location: https://github.com/SgtWiggles/CheckersRedux.git
 
 source-repository-package
     type: git
