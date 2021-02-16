@@ -106,6 +106,9 @@ executable yourNameCheckers
   default-language:    Haskell2010
 ```
 
+If you would like to use checkers-brick on Windows you are going to have to install WSL2, along with GHC and Cabal in that WSL2 instance.
+From there, you can follow the Unix and WSL2 setup instructions.
+
 ### A note on sharing your checkers game for the tournament
 
 There will likely be a small tournament to test your AIs, and you will be able to test your AI against Robin's.
