@@ -48,7 +48,7 @@ executable DIR-NAME
   hs-source-dirs: src
   other-modules:      YOUR-MODULES
   -- other-extensions:
-  build-depends:        base >=4.13
+  build-depends:        base
                       , checkers
                       , checkers-brick
   -- hs-source-dirs:
