@@ -7,7 +7,7 @@ You *will* need to use cabal to build this project.
 ## Getting set up (Unix & WSL2)
 
 Create a directory named yourNameCheckers, and put the following files under it, replacing any instance of yourName with your name.
-Then create the following files.
+Then create the following files in the directory you just created.
 
 cabal.project
 ``` yaml
@@ -62,7 +62,7 @@ As Windows does not have VTE, the brick frontend cannot be used.
 Thus, the set up process is slightly different and is as follows.
 
 Create a folder named yourNameCheckers, replacing yourName with your name.
-Then create the following files.
+Then create the following files in the directory you just created.
 
 cabal.project
 ``` yaml
