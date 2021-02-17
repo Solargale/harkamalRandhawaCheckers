@@ -346,7 +346,7 @@ This part of the program uses concepts that are not covered in the class (or par
 
 ### Setting up cabal yourself
 
-## Installation and set-up
+## Installation and set-up: Checkers
 
 You should start by making a directory and including the following files:
 
@@ -359,7 +359,7 @@ cabal init
 This will initialize a cabal project in your directory.
 
 ``` console 
-benmacadam@Bens-MacBook-Air ~/D/G/YOUR-PROJECT-DIR> ls
+~/D/G/YOUR-PROJECT-DIR> ls
 CHANGELOG.md            Main.hs                 Setup.hs                YOUR-PROJECT-DIR.cabal
 ```
 
@@ -389,7 +389,7 @@ If you look inside the .cabal file, you will see the information used by cabal t
     main-is:             Main.hs
     -- other-modules:
     -- other-extensions:
-    build-depends:       base >=4.13 && <4.14
+    build-depends:       base
     -- hs-source-dirs:
     default-language:    Haskell2010
 ```
@@ -403,13 +403,13 @@ Everything that matters for this assignment is included underneath "executable Y
 
 As mentioned earlier, this checkers library is not on hackage, so you will need to import it from github directly. 
 Cabal lets you import packages from github repositories, but you must include a cabal project file to add the github repo as a depency to your project.
-Make a file name cabal.project in YOUR-PROJECT-DIR containing the following:
+Make a file named cabal.project in YOUR-PROJECT-DIR containing the following:
 ``` yaml
     packages: .
 
     source-repository-package
         type: git
-        location: https://github.com/benjamin-macadam/CheckersRedux.git
+        location: https://github.com/SgtWiggles/CheckersRedux.git
 ```
 The first line ensures that the normal package setup still works, and then adding "source-repository-package" adds this github page as a valid source repository that cabal can install packages from.
 
@@ -421,7 +421,7 @@ Now you should change the executable portion of your cabal file to:
     hs-source-dirs: src -- if you want to use a source directory, otherwise comment this out
     other-modules:  MODULE -- Use modules to organize your code, rather than writing everything in Main.
     -- other-extensions:
-    build-depends:        base >=4.13 && <4.14
+    build-depends:        base
                         , checkers
     -- hs-source-dirs:
     default-language:    Haskell2010
@@ -446,3 +446,39 @@ YOUR-PROJECT-DIR user error (RTS doesn't support multiple OS threads (use ghc -t
 ```
 Then run "cabal clean", make sure you have the "ghc-options:  -threaded" in your cabal file, and try again.
 If it's still an issue talk to your TA!
+
+
+## Installation and Set-up: checkers-brick
+This section will assume you have set up CheckersRedux from the above section.
+
+checkers-brick is a terminal frontend for CheckersRedux which is completely optional.
+Unlike the basic frontend, it allows you to make moves through selecting pieces with your arrow keys, instead of having to put in coordinates.
+For more information on checkers-brick, please refer to the section Checkers.FrontEnd.Terminal.
+checkers-brick has a dependency on VTE, thus is available for any Unix-based system (Linux, Mac and WSL2).
+
+To set up this section go back to your .cabal file and add `checkers-brick` to your build depends.
+The executable should look something similar to the following.
+```yaml
+    executable RobinCheckers
+    ghc-options:  -threaded
+    main-is:             Main.hs
+    hs-source-dirs: src -- if you want to use a source directory, otherwise comment this out
+    other-modules:  MODULE -- Use modules to organize your code, rather than writing everything in Main.
+    -- other-extensions:
+    build-depends:        base
+                        , checkers
+                        , checkers-brick
+    -- hs-source-dirs:
+    default-language:    Haskell2010
+```
+
+After you have set checkers-brick in your `build-depends`, you need to tell cabal where to find checkers-brick.
+This can be done by adding the following to the bottom of your cabal.project file.
+``` yaml
+source-repository-package
+    type: git
+    location: https://github.com/SgtWiggles/checkers-brick.git
+```
+
+After this, set up should be complete. The project can then be built and run identically to above.
+If you are having troubles setting this up please contact your TA.
