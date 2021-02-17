@@ -342,10 +342,6 @@ To interact with the program:
 
 This part of the program uses concepts that are not covered in the class (or particularly useful for doing the assignment), so looking at the code for this module may be a bit confusing!
 
-## Some notes
-
-### Setting up cabal yourself
-
 ## Installation and set-up: Checkers
 
 You should start by making a directory and including the following files:
