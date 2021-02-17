@@ -55,6 +55,7 @@ executable yourNameCheckers
   -- hs-source-dirs:
   default-language:    Haskell2010
 ```
+Once the above is set up, you should be able to use `cabal build` to build your project and `cabal run` to run your project.
 
 ## Getting set up (Windows)
 
@@ -108,6 +109,7 @@ executable yourNameCheckers
 
 If you would like to use checkers-brick on Windows you are going to have to install WSL2, along with GHC and Cabal in that WSL2 instance.
 From there, you can follow the Unix and WSL2 setup instructions.
+Once the above is set up, you should be able to use `cabal build` to build your project and `cabal run` to run your project.
 
 ### A note on sharing your checkers game for the tournament
 
