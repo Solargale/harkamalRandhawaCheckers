@@ -411,7 +411,7 @@ The first line ensures that the normal package setup still works, and then addin
 
 Now you should change the executable portion of your cabal file to:
 ``` yaml
-    executable RobinCheckers
+    executable YOUR-PROJECT-DIR
     ghc-options:  -threaded
     main-is:             Main.hs
     hs-source-dirs: src -- if you want to use a source directory, otherwise comment this out
@@ -453,9 +453,9 @@ For more information on checkers-brick, please refer to the section Checkers.Fro
 checkers-brick has a dependency on VTE, thus is available for any Unix-based system (Linux, Mac and WSL2).
 
 To set up this section go back to your .cabal file and add `checkers-brick` to your build depends.
-The executable should look something similar to the following.
+The executable section should look something similar to the following.
 ```yaml
-    executable RobinCheckers
+    executable YOUR-PROJECT-DIR
     ghc-options:  -threaded
     main-is:             Main.hs
     hs-source-dirs: src -- if you want to use a source directory, otherwise comment this out
