@@ -1,4 +1,4 @@
-# CPSC 441 Checkers package
+# CPSC 449 Checkers package
 
 A library for making a checkers game for the University of Calgary's Programming Paradigms class.
 This should serve as a gentle introduction to software development in Haskell.
