@@ -1,13 +1,19 @@
 module Main where
 
 import Moves
-import Checkers.BasicPrint
-import Checkers.FrontEnd.Basic
 import Checkers.FrontEnd.Types
-import Checkers.Types (initialGameState)
+import Checkers.Types
 
-gameConfig :: GameConfig
-gameConfig = GameConfig{
+testOne :: GameConfig
+testOne = GameConfig{
+    engine = apply_move,
+    blackMove = Human,
+    redMove = Human,
+    state = GameState {blackPieces = [], redPieces = [], blackKings = [(1,0)], redKings = [(0,3),(2,3)], status = Turn Black, message = "", history = [[K (1,2),K (0,3)],[K (0,1),K (1,0)],[K (0,3),K (1,2)]]}
+}
+
+initial :: GameConfig
+initial = GameConfig{
     engine = apply_move,
     blackMove = Human,
     redMove = Human,
@@ -17,5 +23,8 @@ gameConfig = GameConfig{
 
 main :: IO ()
 main = do
-      print (moves initialGameState)
-      frontend gameConfig { engine = apply_move, blackMove = Human, redMove = Human, state = initialGameState}
+  print (moves GameState {blackPieces = [], redPieces = [], blackKings = [(1,0)], redKings = [(0,3),(2,3)], status = Turn Black, message = "", history = [[K (1,2),K (0,3)],[K (0,1),K (1,0)],[K (0,3),K (1,2)]]})
+
+
+-- do
+--   frontend testOne
