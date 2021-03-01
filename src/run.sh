@@ -1,2 +1,2 @@
-stack build
-stack ghci ./src/Moves.hs
+stack build --exec harkamalRandhawaCheckers
+#stack ghci ./src/Main.hs
