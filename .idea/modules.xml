@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/harkamalRandhawaCheckers.iml" filepath="$PROJECT_DIR$/harkamalRandhawaCheckers.iml" />
+      <module fileurl="file:///media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/dist-newstyle/src/CheckersR_-420a1ce714eb2655/checkers.iml" filepath="/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/dist-newstyle/src/CheckersR_-420a1ce714eb2655/checkers.iml" />
+      <module fileurl="file:///media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/dist-newstyle/src/checkers-_-bba2081f2e7644b2/checkers-brick.iml" filepath="/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/dist-newstyle/src/checkers-_-bba2081f2e7644b2/checkers-brick.iml" />
+      <module fileurl="file:///media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/harkamalRandhawaCheckers.iml" filepath="/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/harkamalRandhawaCheckers.iml" />
     </modules>
   </component>
 </project>

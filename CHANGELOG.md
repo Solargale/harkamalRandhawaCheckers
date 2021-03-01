@@ -1,4 +1,4 @@
-# Revision history for harkamalCheckers
+# Revision history for harkamalRandhawaCheckers
 
 ## 0.1.0.0 -- YYYY-mm-dd
 
