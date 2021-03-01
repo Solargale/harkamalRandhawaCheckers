@@ -3,6 +3,9 @@ module Moves where
 import Checkers.Types
 
 -- Implement your code for moves function below
+apply_move:: CheckersEngine
+apply_move mv st = st{message = "!!GAME OVER!!"}
+
 moves :: GameState -> ([Move],[Move])
 moves g = ([],[])
 

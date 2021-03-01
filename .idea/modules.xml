@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../harkamalRandhawaCheckers/harkamalRandhawaCheckers.iml" filepath="$PROJECT_DIR$/../harkamalRandhawaCheckers/harkamalRandhawaCheckers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/harkamalRandhawaCheckers.iml" filepath="$PROJECT_DIR$/harkamalRandhawaCheckers.iml" />
     </modules>
   </component>
 </project>

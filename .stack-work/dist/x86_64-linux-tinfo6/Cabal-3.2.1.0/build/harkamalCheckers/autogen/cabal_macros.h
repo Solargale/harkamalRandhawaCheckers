@@ -22,6 +22,17 @@
   (major1) == 4 && (major2) == 14 && (minor) <= 1)
 #endif /* MIN_VERSION_base */
 
+/* package brick-0.58.1 */
+#ifndef VERSION_brick
+#define VERSION_brick "0.58.1"
+#endif /* VERSION_brick */
+#ifndef MIN_VERSION_brick
+#define MIN_VERSION_brick(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  58 || \
+  (major1) == 0 && (major2) == 58 && (minor) <= 1)
+#endif /* MIN_VERSION_brick */
+
 /* package checkers-0.1.0.0 */
 #ifndef VERSION_checkers
 #define VERSION_checkers "0.1.0.0"
@@ -43,6 +54,50 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_checkers_brick */
+
+/* package cursor-0.3.0.0 */
+#ifndef VERSION_cursor
+#define VERSION_cursor "0.3.0.0"
+#endif /* VERSION_cursor */
+#ifndef MIN_VERSION_cursor
+#define MIN_VERSION_cursor(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 0)
+#endif /* MIN_VERSION_cursor */
+
+/* package directory-1.3.6.0 */
+#ifndef VERSION_directory
+#define VERSION_directory "1.3.6.0"
+#endif /* VERSION_directory */
+#ifndef MIN_VERSION_directory
+#define MIN_VERSION_directory(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  3 || \
+  (major1) == 1 && (major2) == 3 && (minor) <= 6)
+#endif /* MIN_VERSION_directory */
+
+/* package lens-4.19.2 */
+#ifndef VERSION_lens
+#define VERSION_lens "4.19.2"
+#endif /* VERSION_lens */
+#ifndef MIN_VERSION_lens
+#define MIN_VERSION_lens(major1,major2,minor) (\
+  (major1) <  4 || \
+  (major1) == 4 && (major2) <  19 || \
+  (major1) == 4 && (major2) == 19 && (minor) <= 2)
+#endif /* MIN_VERSION_lens */
+
+/* package vty-5.32 */
+#ifndef VERSION_vty
+#define VERSION_vty "5.32"
+#endif /* VERSION_vty */
+#ifndef MIN_VERSION_vty
+#define MIN_VERSION_vty(major1,major2,minor) (\
+  (major1) <  5 || \
+  (major1) == 5 && (major2) <  32 || \
+  (major1) == 5 && (major2) == 32 && (minor) <= 0)
+#endif /* MIN_VERSION_vty */
 
 /* tool alex-3.2.5 */
 #ifndef TOOL_VERSION_alex
@@ -177,7 +232,7 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "harkamalRandhawaCheckers-0.1.0.0-391KatpzLFVCtQZi4RW7k-harkamalCheckers"
+#define CURRENT_COMPONENT_ID "harkamalRandhawaCheckers-0.1.0.0-5Z00ARHVADcAPzoArbsdNo-harkamalCheckers"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

@@ -1,6 +1,14 @@
 /media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/CHANGELOG.md:
   hash: dbd6fd68930e650373469982565add4d542be3cc900bb80e283214aa022796b1
+/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/src/Checkers/FrontEnd/Basic.hs:
+  hash: 2285960a6569b7990ed3a71b1f56ef0b3d60ec52267536a14197e617847e3b16
+/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/src/Checkers/BasicPrint.hs:
+  hash: 9c48fe79ca77079247ee37f6d1cbbc62b7c70cdb36919b4d6d0bf0be82f5ddfe
 /media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/harkamalRandhawaCheckers.cabal:
-  hash: ccd92ff496518c91fe2d1e633af1b0ea3b67a74cd327d5fce6ad4e921fe190e1
+  hash: 893f2bc61c42ae75f7493e19dabb8f96321c386559a905f31785fbbffe419b27
 /media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/src/Main.hs:
-  hash: 0792be798f2ed411fefbc432b37fa184808a6ba31464627cbb22f7c4230d435a
+  hash: 3f6199bdf4e1ff7723fc0bcb731e171dd0d35c17d124c7ab2b2d0a41d5e2ded1
+/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/src/Moves.hs:
+  hash: bcec7861b3a87d0e5edf851f81947807da177d70b1ba133ac72254859da628b4
+/media/Storage/Repos/Git/Programing/Haskell/harkamalRandhawaCheckers/src/Checkers/FrontEnd/Types.hs:
+  hash: 7264dc3d7c43178e2552af928d73dd0cdddf6dfc292b5efa3b64ccba4aaf43b6
