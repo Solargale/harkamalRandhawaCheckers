@@ -1,4 +1,4 @@
-# Revision history for CheckersRedux
+# Revision history for harkamalCheckers
 
 ## 0.1.0.0 -- YYYY-mm-dd
 
