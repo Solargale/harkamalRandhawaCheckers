@@ -1,6 +1,5 @@
 module Checkers.Types where
 
-import Data.Maybe
 
 {-
     A coordinate represents a square on the board, it is a pair of integers (x,y).
